@@ -1,0 +1,15 @@
+dbt_impala_demo:
+  outputs:
+    dev:
+     type: impala
+     host: coordinator-Impala-autoscale-aws.dw-go01-demo-aws.ylcu-atmi.cloudera.site
+     port: 443
+     dbname: jaffle_shop
+     schema: jaffle_shop
+     user: vishrajagopalan
+     password: C1oudera$
+     auth_type: ldap
+     use_http_transport: true
+     use_ssl: true
+     http_path: cliservice
+  target: dev
