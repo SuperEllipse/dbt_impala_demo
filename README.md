@@ -1,10 +1,18 @@
-Welcome to your new dbt project!
+Welcome to the DBT Project
 
 ### Using the starter project
 
 Try running the following commands:
+- dbt debug
 - dbt run
 - dbt test
+
+## 
+
+### Environment Variables
+Make sure to set the CDP Credentials with the following environment variables
+- DBT_CDP_USER
+- DBT_CDP_PASSWORD
 
 
 ### Resources:

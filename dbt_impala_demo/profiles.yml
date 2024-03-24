@@ -6,8 +6,8 @@ dbt_impala_demo:
      port: 443
      dbname: jaffle_shop
      schema: jaffle_shop
-     user: vishrajagopalan
-     password: C1oudera$
+     user: "{{ env_var('DBT_CDP_USER') }}"
+     password: "{{ env_var('DBT_CDP_PASSWORD') }}"
      auth_type: ldap
      use_http_transport: true
      use_ssl: true
